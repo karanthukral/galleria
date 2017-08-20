@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div>
+
+  {% assign pictures = site.static_files | where: "image", true %}
+
+  {% for gallery in site.data.galleries %}
+    {{ gallery.name }}
+
+    {% assign gallery_directory = gallery.imagefolder %}
+    {% assign gallery_pictures = gallery.pictures %}
+
+    {% unless gallery_directory %}
+      {% assign gallery_directory = gallery.name | downcase %}
+    {% endunless %}
+
+    {% unless gallery_pictures %}
+      {% capture search_path %}/pictures/{{ gallery_directory }}{% endcapture %}
+
+      {% for pic in pictures %}
+        {% if pic.path contains search_path %}
+          <div class="item">
+            <img src=/pictures/{{ gallery_directory }}/{{ pic.name}} >
+          </div>
+        {% endif %}
+
+      {% endfor %}
+    {% endunless %}
+
+    {% for pic in gallery_pictures %}
+      <div class="item">
+        <img src=/pictures/{{ gallery_directory }}/{{ pic.name}} >
+      </div>
+    {% endfor %}
+
+  {% endfor %}
+
+</div>
