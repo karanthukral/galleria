@@ -22,10 +22,13 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
-pictures:
-  galleries:
-    - Dogs
-
+assets:
+  scripts:
+    - https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js
+    - https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.js
+  css:
+    - https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css
+    - https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css
 # Build settings
 markdown: kramdown
 theme: minima

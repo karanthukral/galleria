@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: photo_swipe
 ---
 
-<div>
+<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
   {% assign pictures = site.static_files | where: "image", true %}
 
@@ -21,9 +21,12 @@ layout: default
 
       {% for pic in pictures %}
         {% if pic.path contains search_path %}
-          <div class="item">
-            <img src=/pictures/{{ gallery_directory }}/{{ pic.name}} >
-          </div>
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="/pictures/{{ gallery_directory }}/{{ pic.name}}" itemprop="contentUrl">
+                <img src="/pictures/{{ gallery_directory }}/{{ pic.name}}" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <figcaption itemprop="caption description" style="display: none">Image caption</figcaption>
+        </figure>
         {% endif %}
 
       {% endfor %}
