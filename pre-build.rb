@@ -1,4 +1,5 @@
 require "mini_magick"
+require "image_optim"
 require "yaml"
 
 MAX_DIMENSION = 750
@@ -30,6 +31,8 @@ def process_image(path)
   thumbnail_path = File.join(thumbnail_dir, picture_name)
   Dir.mkdir(thumbnail_dir) unless File.exist?(thumbnail_dir)
 
+  image_optim = ImageOptim.new
+
   image = MiniMagick::Image.open(path)
 
   image_prop = {
@@ -43,12 +46,16 @@ def process_image(path)
 
   image.resize "#{MAX_DIMENSION}>"
   image.write thumbnail_path
+
+  image_optim.optimize_image!(path)
+  image_optim.optimize_image!(thumbnail_path)
+
   image_prop
 end
 
 Dir["#{search_directory}/*/"].each do |dir|
   imagefolder = File.basename(dir)
-  # puts imagefolder
+
   gallery_index = galleries.index{ |g| g["imagefolder"] == imagefolder }
 
   gallery = if gallery_index
@@ -73,7 +80,6 @@ Dir["#{search_directory}/*/"].each do |dir|
     end
 
     picture_index = pictures.index{ |pic| pic["name"] == image["name"]}
-    puts picture_index
 
     if picture_index
       gallery["pictures"][picture_index] = pictures[picture_index].merge(image)
@@ -93,9 +99,3 @@ Dir["#{search_directory}/*/"].each do |dir|
 end
 
 File.write(galleries_config, galleries.to_yaml)
-
-# image = MiniMagick::Image.open("pictures/dogs/1.jpg")
-# puts image.dimensions
-# image.resize "#{max_dimension}>"
-# image.format "jpg"
-# image.write "output.png"
