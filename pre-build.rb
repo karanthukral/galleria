@@ -28,13 +28,12 @@ end
 def process_image(path)
   picture_name = File.basename(path)
   thumbnail_dir = File.join(File.dirname(path), "thumbnails")
-  thumbnail_path = File.join(thumbnail_dir, picture_name)
+  thumbnail_path = File.join(thumbnail_dir, "#{File.basename(picture_name, File.extname(picture_name))}.jpg")
   Dir.mkdir(thumbnail_dir) unless File.exist?(thumbnail_dir)
 
   image_optim = ImageOptim.new
 
   image = MiniMagick::Image.open(path)
-
   image_prop = {
     "name" => picture_name,
     "thumb" => "thumbnails/#{picture_name}",
@@ -44,7 +43,17 @@ def process_image(path)
 
   return image_prop if File.exist?(thumbnail_path)
 
-  image.resize "#{MAX_DIMENSION}>"
+# -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB
+
+  image.format "jpeg" unless File.extname(picture_name) == "jpg"
+  image.combine_options do |b|
+    b.resize "#{MAX_DIMENSION}>"
+    b.sampling_factor "4:2:0"
+    b.strip
+    b.interlace "JPEG"
+    b.colorspace "RGB"
+    b.quality 85
+  end
   image.write thumbnail_path
 
   image_optim.optimize_image!(path)
