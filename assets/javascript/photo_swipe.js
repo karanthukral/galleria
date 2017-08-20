@@ -25,12 +25,15 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             linkEl = figureEl.children[0]; // <a> element
 
             // size = linkEl.getAttribute('data-size') && linkEl.getAttribute('data-size').split('x');
+            size = linkEl.getAttribute('data-size').split('x');
 
             // create slide object
             item = {
                 src: linkEl.getAttribute('href'),
-                w: linkEl.firstElementChild.naturalWidth,
-                h: linkEl.firstElementChild.naturalHeight
+                // w: linkEl.firstElementChild.naturalWidth,
+                // h: linkEl.firstElementChild.naturalHeight
+                w: parseInt(size[0], 10),
+                h: parseInt(size[1], 10)
             };
 
 

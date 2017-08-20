@@ -6,7 +6,7 @@ layout: photo_swipe
   {% assign pictures = site.static_files | where: "image", true %}
 
   {% for gallery in site.data.galleries %}
-    {{ gallery.name }}
+    <h2> {{ gallery.name }} </h2>
       <div class="my-gallery masonry" itemscope itemtype="http://schema.org/ImageGallery">
 
       {% assign gallery_directory = gallery.imagefolder %}
@@ -33,9 +33,12 @@ layout: photo_swipe
       {% endunless %}
 
       {% for pic in gallery_pictures %}
-        <div class="item">
-          <img src=/pictures/{{ gallery_directory }}/{{ pic.name}} >
-        </div>
+        <figure class="item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="/pictures/{{ gallery_directory }}/{{ pic.name}}" itemprop="contentUrl" data-size="{{pic.width}}x{{pic.height}}">
+              <img src="/pictures/{{ gallery_directory }}/{{ pic.thumb }}" itemprop="thumbnail" alt="Image description" />
+          </a>
+          <figcaption itemprop="caption description" style="display: none">{{ pic.caption }}</figcaption>
+        </figure>
       {% endfor %}
     </div>
 
