@@ -1,0 +1,5 @@
+{% for script in site.assets.scripts %}
+  <script type="text/javascript" src="{{script}}" async></script>
+{% endfor %}
+
+<script type="text/javascript" src="{{ "/assets/javascript/photo_swipe.js" | relative_url }}" async></script>

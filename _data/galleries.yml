@@ -1,9 +1,10 @@
 ---
-- name: Dogs are Awesome
+- name: Dogs
   imagefolder: dogs
+  description: ''
   pictures:
-  - name: 4.jpg
-    thumb: thumbnails/4.jpg
+  - name: 1.jpg
+    thumb: thumbnails/1.jpg
     height: 3456
     width: 4608
   - name: 2.jpg
@@ -14,8 +15,7 @@
     thumb: thumbnails/3.jpg
     height: 4608
     width: 3456
-  - name: 1.jpg
-    thumb: thumbnails/1.jpg
+  - name: 4.jpg
+    thumb: thumbnails/4.jpg
     height: 3456
     width: 4608
-  description: ''

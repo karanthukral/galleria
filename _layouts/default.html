@@ -4,7 +4,6 @@
   {% include head.html %}
 
   <body>
-
     {% include header.html %}
 
     <main class="page-content" aria-label="Content">
@@ -15,12 +14,7 @@
 
     {% include footer.html %}
 
-    {% for script in site.assets.scripts %}
-      <script type="text/javascript" src="{{script}}" async></script>
-    {% endfor %}
-
-    <script type="text/javascript" src="{{ "/assets/javascript/photo_swipe.js" | relative_url }}" async></script>
-
+    {% include scripts.html %}
   </body>
 
 </html>

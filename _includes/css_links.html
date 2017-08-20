@@ -1,0 +1,6 @@
+<link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}" lazyload="1">
+<link rel="stylesheet" href="{{ "/assets/index.css" | relative_url }}" lazyload="1">
+
+{% for css in site.assets.css %}
+  <link rel="stylesheet" href="{{css}}" lazyload="1">
+{% endfor %}

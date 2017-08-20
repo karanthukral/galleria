@@ -10,9 +10,9 @@ search_directory = File.expand_path(search_directory)
 
 galleries =
   if File.exist? galleries_config
-    YAML.load_file(galleries_config)
+    YAML.load_file(galleries_config) || []
   else
-    {}
+    []
   end
 
 # puts galleries
