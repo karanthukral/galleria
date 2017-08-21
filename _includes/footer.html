@@ -18,19 +18,19 @@
         </ul>
       </div>
 
-      <div class="footer-col footer-col-2">
+      <div class="footer-col footer-right">
         <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
+          {% for link in site.links %}
+            <p>
+              {% if link.link %}
+              <a href="{{ link.link }}">
+              {% endif %}
+              <i class="fab fa-{{ link.icon}} " aria-hidden="true"></i> {{ link.name }}
+              {% if link.link %}
+              </a>
+              {% endif %}
+            </p>
+          {% endfor %}
         </ul>
       </div>
 

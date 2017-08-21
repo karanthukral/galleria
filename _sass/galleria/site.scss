@@ -1,10 +1,27 @@
 .site-title {
-  color: $accent-color;
+  color: $text-color;
   &:visited {
-    color: $accent-color;
+    color: $text-color;
   }
   &:hover {
     text-decoration: none;
     font-weight: 500;
   }
+}
+
+.social-media-list {
+  a {
+    color: $text-color;
+    &:visited {
+      color: $text-color;
+    }
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+
+.footer-right {
+  float: right;
+  width: auto;
 }
