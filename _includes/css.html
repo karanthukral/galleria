@@ -1,0 +1,16 @@
+<!-- Font
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<style type="text/css">
+  {% capture include_to_scssify %}
+    {% include inline.scss %}
+  {% endcapture %}
+  {{ include_to_scssify | scssify }}
+</style>
+
+{% for css in site.assets.css %}
+  <link rel="stylesheet" href="{{css}}" lazyload="1">
+{% endfor %}

@@ -1,6 +1,7 @@
-
-// Import partials.
+// NOTE: This file is included by incline.scss
+//       Variables are set there using liquid syntax
 @import
+  "minima",
   "galleria/home",
   "galleria/site"
 ;

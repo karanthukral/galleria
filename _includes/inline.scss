@@ -1,13 +1,6 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-
 $base-font-family: {{ site.css.font-family | default: "'Raleway', sans-serif"}};
 $text-color:       {{ site.css.text-color | default: '#424242' }};
 $background-color: {{ site.css.background-color | default: '#fdfdfd' }};
 $accent-color:     {{ site.css.accent-color | default: '#2a7ae2' }};
 
-@import
-  "minima",
-  "galleria"
-;
+@import "galleria";
