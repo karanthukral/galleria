@@ -5,4 +5,4 @@
 {% include_relative photo_swipe.js %}
 {% include_relative fontawesome.min.js %}
 
-# // NOTE brands is weird 
+// NOTE brands is weird 
