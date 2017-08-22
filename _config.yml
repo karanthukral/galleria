@@ -33,6 +33,7 @@ assets:
   css:
     - https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css
     - https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css
+
 # Build settings
 markdown: kramdown
 theme: minima
