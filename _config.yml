@@ -25,6 +25,9 @@ links:
   - name: github.com/karanthukral
     icon: github
     link: https://github.com/karanthukral
+  - name: karanthukral.me
+    icon: globe
+    link: https://karanthukral.me
 
 assets:
   scripts:
