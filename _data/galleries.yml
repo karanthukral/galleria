@@ -1,7 +1,7 @@
 ---
-- name: Ottawa-2017
+- name: Ottawa Summer 2017
   imagefolder: ottawa-2017
-  description: ''
+  description: 'Ottawa Summer 2017'
   pictures:
   - name: Ottawa1.jpg
     thumb: thumbnails/Ottawa1.jpg
