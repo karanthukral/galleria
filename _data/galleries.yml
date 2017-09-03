@@ -3,59 +3,59 @@
   imagefolder: ottawa-2017
   description: ''
   pictures:
-  - name: 0142017-08-10-.jpg
-    thumb: thumbnails/0142017-08-10-.jpg
+  - name: Ottawa1.jpg
+    thumb: thumbnails/Ottawa1.jpg
     height: 4000
     width: 6000
-  - name: 0232017-07-27-.jpg
-    thumb: thumbnails/0232017-07-27-.jpg
-    height: 3850
-    width: 5775
-  - name: 0232017-08-10-.jpg
-    thumb: thumbnails/0232017-08-10-.jpg
-    height: 3939
-    width: 5908
-  - name: 0332017-08-10-.jpg
-    thumb: thumbnails/0332017-08-10-.jpg
-    height: 3939
-    width: 5908
-  - name: 0582017-08-10-.jpg
-    thumb: thumbnails/0582017-08-10-.jpg
+  - name: Ottawa10.jpg
+    thumb: thumbnails/Ottawa10.jpg
     height: 6000
     width: 4000
-  - name: 0602017-07-28-.jpg
-    thumb: thumbnails/0602017-07-28-.jpg
+  - name: Ottawa11.jpg
+    thumb: thumbnails/Ottawa11.jpg
     height: 4000
     width: 6000
-  - name: 2017-07-20-022.jpg
-    thumb: thumbnails/2017-07-20-022.jpg
-    height: 6000
-    width: 4000
-  - name: 2017-07-22-074.jpg
-    thumb: thumbnails/2017-07-22-074.jpg
-    height: 4000
-    width: 6000
-  - name: 2017-08-18-Byward-Street-Performance-060.jpg
-    thumb: thumbnails/2017-08-18-Byward-Street-Performance-060.jpg
-    height: 6000
-    width: 4000
-  - name: 40994830-8EA3-47C6-98D9-995103304380.jpg
-    thumb: thumbnails/40994830-8EA3-47C6-98D9-995103304380.jpg
+  - name: Ottawa12.jpg
+    thumb: thumbnails/Ottawa12.jpg
     height: 3760
     width: 5640
-  - name: 6B7F0EE5-B08B-4F92-960D-526DE5F844EE.jpg
-    thumb: thumbnails/6B7F0EE5-B08B-4F92-960D-526DE5F844EE.jpg
-    height: 4000
-    width: 6000
-  - name: 7A140114-4A5B-44B0-B055-D0422255E20C.jpg
-    thumb: thumbnails/7A140114-4A5B-44B0-B055-D0422255E20C.jpg
-    height: 3879
-    width: 5819
-  - name: IMG_0053.jpg
-    thumb: thumbnails/IMG_0053.jpg
+  - name: Ottawa13.jpg
+    thumb: thumbnails/Ottawa13.jpg
     height: 3024
     width: 4032
-  - name: IMG_0100.jpg
-    thumb: thumbnails/IMG_0100.jpg
+  - name: Ottawa14.jpg
+    thumb: thumbnails/Ottawa14.jpg
     height: 2560
     width: 1707
+  - name: Ottawa2.jpg
+    thumb: thumbnails/Ottawa2.jpg
+    height: 3879
+    width: 5819
+  - name: Ottawa3.jpg
+    thumb: thumbnails/Ottawa3.jpg
+    height: 6000
+    width: 4000
+  - name: Ottawa4.jpg
+    thumb: thumbnails/Ottawa4.jpg
+    height: 4000
+    width: 6000
+  - name: Ottawa5.jpg
+    thumb: thumbnails/Ottawa5.jpg
+    height: 6000
+    width: 4000
+  - name: Ottawa6.jpg
+    thumb: thumbnails/Ottawa6.jpg
+    height: 4000
+    width: 6000
+  - name: Ottawa7.jpg
+    thumb: thumbnails/Ottawa7.jpg
+    height: 3850
+    width: 5775
+  - name: Ottawa8.jpg
+    thumb: thumbnails/Ottawa8.jpg
+    height: 3939
+    width: 5908
+  - name: Ottawa9.jpg
+    thumb: thumbnails/Ottawa9.jpg
+    height: 3939
+    width: 5908
