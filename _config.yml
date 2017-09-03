@@ -16,7 +16,7 @@
 title: Karan Thukral Photography
 author: Karan Thukral
 email: mail@karanthukral.me
-description: > # this means to ignore newlines until "baseurl:"
+description: Attribute all photos to Karan Thukral
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
