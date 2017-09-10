@@ -1,4 +1,36 @@
 ---
+- name: MOSAÏCANADA 150
+  imagefolder: mosaicanada-150
+  description: ''
+  pictures:
+  - name: 2017-09-10-Gatineau-MosiaCanada-Walk-009.jpg
+    thumb: thumbnails/2017-09-10-Gatineau-MosiaCanada-Walk-009.jpg
+    height: 5824
+    width: 3883
+  - name: 2017-09-10-Gatineau-MosiaCanada-Walk-011.jpg
+    thumb: thumbnails/2017-09-10-Gatineau-MosiaCanada-Walk-011.jpg
+    height: 5928
+    width: 3952
+  - name: 2017-09-10-Gatineau-MosiaCanada-Walk-012.jpg
+    thumb: thumbnails/2017-09-10-Gatineau-MosiaCanada-Walk-012.jpg
+    height: 4000
+    width: 6000
+  - name: 2017-09-10-Gatineau-MosiaCanada-Walk-015.jpg
+    thumb: thumbnails/2017-09-10-Gatineau-MosiaCanada-Walk-015.jpg
+    height: 4000
+    width: 6000
+  - name: 2017-09-10-Gatineau-MosiaCanada-Walk-026.jpg
+    thumb: thumbnails/2017-09-10-Gatineau-MosiaCanada-Walk-026.jpg
+    height: 3935
+    width: 5902
+  - name: 2017-09-10-Gatineau-MosiaCanada-Walk-050.jpg
+    thumb: thumbnails/2017-09-10-Gatineau-MosiaCanada-Walk-050.jpg
+    height: 6000
+    width: 4000
+  - name: 2017-09-10-Gatineau-MosiaCanada-Walk-062.jpg
+    thumb: thumbnails/2017-09-10-Gatineau-MosiaCanada-Walk-062.jpg
+    height: 3920
+    width: 5721
 - name: Ottawa Summer 2017
   imagefolder: ottawa-2017
   description: Ottawa Summer 2017
